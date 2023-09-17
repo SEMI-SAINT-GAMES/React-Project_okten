@@ -14,7 +14,7 @@ export const Movie: FC<IProps> = ({movie}) => {
     <div className="movie">
         
         <img src={imageBaseURL + movie.poster_path} alt="NoPhoto"></img>
-      <div className="movieTitle"><TruncatedText text={movie.title} maxLength={30} /></div>
+      <div className="movieTitle"><TruncatedText text={movie.title} maxLength={20} /></div>
        {/* {movie.name} */}
       <Raiting rate = {movie.vote_average}/>
       

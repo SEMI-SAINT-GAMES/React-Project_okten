@@ -68,7 +68,7 @@ code {
   }
 }
 
-@media (min-width: 920px) {
+@media (min-width: 1050px) {
   .Movies {
     grid-template-columns: repeat(4, 1fr); /* Повертаємо 4 колонки на один ряд */
   }
@@ -80,7 +80,7 @@ code {
   text-align: center;
   box-shadow: 5px 5px 5px #000000;
   max-width: 100%; 
-  height: 520px;
+  height: 570px;
   margin-top: 30px;
   display: flex;
   flex-direction: column;
@@ -127,12 +127,14 @@ code {
 }
 .genre{
   background-color: #FFD700;
-  border: 1px solid #FFD700;
   padding: 10px;
   text-align: center;
   box-shadow: 5px 5px 5px #000000;
   max-width: 100%; 
-  
+  transition: background-color 0.3s;
+}
+.genre:hover{
+  background-color: #92832a;
 }
 .linksDiv{
   display: flex;
