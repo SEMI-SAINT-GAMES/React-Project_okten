@@ -49,7 +49,7 @@ code {
   
   margin: 0 auto;
   padding: 20px;
-  /* background-color: rgb(132, 132, 154); */
+ 
 }
 .Movies{
   display: grid;
@@ -59,18 +59,33 @@ code {
 }
 @media (min-width: 350px) {
   .Movies {
-    grid-template-columns: repeat(2, 1fr); /* 3 колонки на один ряд */
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
 @media (min-width: 650px) {
   .Movies {
-    grid-template-columns: repeat(3, 1fr); /* 3 колонки на один ряд */
+    grid-template-columns: repeat(3, 1fr); 
   }
 }
 
 @media (min-width: 1050px) {
   .Movies {
-    grid-template-columns: repeat(4, 1fr); /* Повертаємо 4 колонки на один ряд */
+    grid-template-columns: repeat(4, 1fr); 
+  }
+}
+@media (min-width: 1350px) {
+  .Movies {
+    grid-template-columns: repeat(5, 1fr); 
+  }
+}
+@media (min-width: 1650px) {
+  .Movies {
+    grid-template-columns: repeat(6, 1fr); 
+  }
+}
+@media (min-width: 1950px) {
+  .Movies {
+    grid-template-columns: repeat(7, 1fr); 
   }
 }
 
@@ -101,18 +116,18 @@ code {
 }
 @media (min-width: 350px) {
   .genres {
-    grid-template-columns: repeat(2, 1fr); /* 3 колонки на один ряд */
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
 @media (min-width: 650px) {
   .genres {
-    grid-template-columns: repeat(3, 1fr); /* 3 колонки на один ряд */
+    grid-template-columns: repeat(3, 1fr); 
   }
 }
 
 @media (min-width: 920px) {
   .genres {
-    grid-template-columns: repeat(4, 1fr); /* Повертаємо 4 колонки на один ряд */
+    grid-template-columns: repeat(4, 1fr); 
   }
 }
 .movie img {
@@ -188,6 +203,9 @@ code {
   background-color: #808080;
   border: 3px solid black;
   border-radius: 50px;
+}
+.MovieInfo p {
+  padding: 20px;
 }
 .GenresInDeteils{
   display: flex;

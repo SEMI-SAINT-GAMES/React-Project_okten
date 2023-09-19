@@ -20,26 +20,9 @@ export const DarkThemeContext = createContext<ThemeContextType | undefined>(unde
 export const App = () => {
     const [isDark, setIsDark] = useState(false)
     const dispatch = useDispatch()
-//     const theme = createTheme({
-//   palette:{
-//       mode:!isDark ? `dark` : `light`
-//   },
-// })
-// const toggleDarkMode = () => {
-//     dispatch(toggleDarkMode())
-//   };
 
 
     return (
-        
-    // <ThemeProvider theme={theme}>
-    //    <CssBaseline/>
-          
-            <RouterProvider router={router}/>
-         
-    // </ThemeProvider>
-   
-    
-        
-    )
+        <RouterProvider router={router}/>
+         )
 }
