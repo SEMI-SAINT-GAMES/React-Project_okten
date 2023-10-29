@@ -45,7 +45,7 @@ const Header = () => {
            </div>
            <div className='linksDiv'>
            <Link to = "popular" className="links">MOVIES</Link>
-           <Link to = "genres" className="links">GENRES</Link>
+           {/* <Link to = "genres" className="links">GENRES</Link> */}
            </div>
         </div>
         </ThemeProvider>
